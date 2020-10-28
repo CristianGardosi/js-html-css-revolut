@@ -26,6 +26,7 @@ body {
 .left-elements-list,
 .right-elements-list {
     display: flex;
+    align-items: center;
     margin-bottom: 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -54,14 +55,22 @@ body {
 .right-elements-list .dropdown-menu {
     position: absolute;
     top: 100%;
-    right: 50%;
-    margin-top: 10px;
-    width: 150px;
+    margin-top: 5px;
     background: white;
     border-radius: 3px;
     /* Alternativa a box-shadow per seguire le fattezze del mio box più fedelmente */
     filter: drop-shadow(0 0 3px rgba(94, 23, 23, 0.2));
 }
+
+.prodotti {
+    width: 250px;
+}
+
+.azienda {
+    width: 150px;
+}
+
+
 
 .right-elements-list .dropdown-menu a{
     display: block;
@@ -71,7 +80,7 @@ body {
 .dropdown-menu .affiliates::before {
     content: 'Nuovo';
     position: absolute;
-    right: 22px;
+    right: 28px;
     font-size: 10px;
     color: #ff7f95;
     
@@ -87,7 +96,7 @@ body {
 }
 
 .right-elements-list .pink-btn {
-    padding: 0 20px;
+    padding: 10px 20px;
     background: pink;
     border: 1px solid black;
     border-radius: 30px;

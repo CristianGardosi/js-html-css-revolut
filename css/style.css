@@ -1,0 +1,99 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Syne Mono', monospace;
+}
+
+/* UTILITIES */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* DOCUMENT STYLES */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left-elements-list,
+.right-elements-list {
+    display: flex;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.left-elements-list li,
+.right-elements-list li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.left-elements-list li a,
+.right-elements-list li a{
+    color: #888;
+    text-decoration: none;
+    transition: color, 0.2s;
+}
+
+/* Dropdown styles */
+/* Allo specifico li che avrà un dropdown menu applico position relative poichè poi il suddetto menu al suo interno andrà gestito nel suo posizionamento tramite absolute */
+.right-elements-list .li-with-dropdown {
+    position: relative;
+}
+/* Con top 100% mi assicuro che stia sempre sotto l'elemento padre che lo fa aprire e non interferirà con il resto della mia navbar.  */
+.right-elements-list .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-top: 10px;
+    width: 150px;
+    background: white;
+    border-radius: 3px;
+    /* Alternativa a box-shadow per seguire le fattezze del mio box più fedelmente */
+    filter: drop-shadow(0 0 3px rgba(94, 23, 23, 0.2));
+}
+
+.right-elements-list .dropdown-menu a{
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-menu .affiliates::before {
+    content: 'Nuovo';
+    position: absolute;
+    right: 22px;
+    font-size: 10px;
+    color: #ff7f95;
+    
+}
+
+.left-elements-list li a:hover,
+.right-elements-list li a:hover{
+    color: black;
+}
+
+.left-elements-list li img {
+    width: 100px;
+}
+
+.right-elements-list .pink-btn {
+    padding: 0 20px;
+    background: pink;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.right-elements-list .pink-btn:hover {
+    background: #ff7f95;
+}

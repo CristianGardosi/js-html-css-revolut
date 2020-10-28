@@ -5,6 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font utilizzato (google fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"> 
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- Bootstrap -->
@@ -16,7 +18,60 @@
 
 <body>
     
-    
+    <header class="header-container container">
+        <div class="left-elements-container">
+            <ul class="left-elements-list">
+                <li>
+                    <img src="./img/logo-revolut.png" alt="Logo">
+                </li>
+                <li>
+                    <a class="uppercase" href="#">personale</a>
+                </li>
+                <li>
+                    <a class="uppercase" href="#">business</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-elements-container">
+            <ul class="right-elements-list">
+                <li>
+                    <a href="#">Tariffa</a>
+                </li>
+                <li>
+                    <a  href="#">Costi</a>
+                </li>
+                <li>
+                    <a href="#">Prodotti</a>
+                </li>
+                <li class="li-with-dropdown">
+                    <a  href="#">Azienda</a>
+                    <!-- Dropdown menu gestito conJQ -->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-link" href="#">Chi siamo
+                        </a>
+                        <a class="dropdown-link" href="#">Azienda
+                        </a>
+                        <a class="dropdown-link" href="#">Lavora con noi
+                        </a>
+                        <a class="dropdown-link affiliates" href="#">Affiliates
+                        </a>
+                        <a class="dropdown-link" href="#">Contatti
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Aiuto</a>
+                </li>
+                <li>
+                    <a  href="#">IT <i class="fas fa-sort-down"></i></a>
+                </li>
+                <li>
+                    <button class="pink-btn">Scarica App!</button>
+                </li>
+            </ul>
+        </div>
+    </header>
 
 
 
